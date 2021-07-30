@@ -45,6 +45,8 @@ int main(int argc, char *argv[])
             fprintf(2, "parent read error\n");
             exit(1);
         }
+        
+
         printf("%d: received pong\n", getpid());
         
         close(child_to_parent[0]);
